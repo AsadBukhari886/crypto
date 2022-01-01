@@ -1,0 +1,6 @@
+#tsparticles{
+    z-index: 1;
+}
+#tsparticles:hover{
+background-color: black;
+}
