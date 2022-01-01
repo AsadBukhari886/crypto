@@ -1,32 +1,33 @@
 import './App.css';
 import { useState } from 'react';
-import Ts_Particles from './particles/Ts_Particles';
-
+import TSParticles from './particles/TSParticles';
 
 function App() {
-  const [search, setSearch] = useState(true)
-  const [input, setInput] = useState('')
+  const [search, setSearch] = useState(true);
+  const [input, setInput] = useState('');
 
-const changer=(e)=>{
-const value=e.target.value;
-setInput(value)
-if(value!==""){
-  setSearch(false)
-}
-}
+  const changer = (e) => {
+    const value = e.target.value;
+    setInput(value);
+    if (value !== '') {
+      setSearch(false);
+    }
+  };
+
   return (
     <>
       {/* {search ? null : <Ts_Particles />} */}
 
-      <div className="App">
-      <Ts_Particles search={search}/>
+      <div className='App'>
+        <TSParticles search={search} />
         <div className='input'>
-
-          <input placeholder='search' value={input} onChange={(e)=>changer(e)} />
+          <input
+            placeholder='search'
+            value={input}
+            onChange={(e) => changer(e)}
+          />
         </div>
-
       </div>
-
     </>
   );
 }
