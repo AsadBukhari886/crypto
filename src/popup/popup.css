@@ -1,0 +1,22 @@
+.popup{
+    
+    background-color: black;
+    opacity: .9;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    color: white;
+    position: absolute;
+    z-index: 7;
+    margin-left: 30%;
+
+}
+.details{
+    display: flex;
+    flex-direction: column;    
+}

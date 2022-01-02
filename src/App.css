@@ -6,6 +6,7 @@
 body{
   overflow: hidden;
   position: relative;
+
 }
 body:hover{
   /* background-color: black; */
@@ -17,9 +18,10 @@ body:hover{
   border: 1px solid #2d2d2d;
   display: flex;
   justify-content: center;
+  position: absolute;
   align-items: center;
 
-  z-index: 5;
+  /* z-index: 5; */
 }
 .input input{
   padding: 5px;
@@ -27,5 +29,4 @@ body:hover{
   border: 2px solid black;
   text-decoration: none;
   height: 20px;
-  position: absolute;
 }

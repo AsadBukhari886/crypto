@@ -1,9 +1,10 @@
 import React from 'react'
 
 function Img_url(props) {
-    console.log("url is  here", props.url)
-    return  props.url
-    
+    alert("this is ", props.detail)
+    // return props.url
+    console.log("hoo ga plzzz")
+return <h1></h1>
 }
 
 export default Img_url
