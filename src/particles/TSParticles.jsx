@@ -38,7 +38,7 @@ function TSParticles(props) {
       }
       if (shouldPopupshow) {
         // setShouldPopupshow(false)
-        setShouldPopupshow(true)
+        setShouldPopupshow(false)
       }
     });
   };
@@ -94,7 +94,7 @@ function TSParticles(props) {
       src: "https://upload.wikimedia.org/wikipedia/commons/3/36/ETC_Logo.png",
       height: 10,
       width: 10,
-      name: "new image",
+      name: "ETC",
       image_address: "https://upload.wikimedia.org/wikipedia/commons/3/36/ETC_Logo.png"
     },
 
@@ -206,7 +206,7 @@ function TSParticles(props) {
       {shouldPopupshow ? <Popup show={setShouldPopupshow} detail={details} /> : null}
       <div className='input'>
         <input
-          placeholder='search'
+          placeholder='search it here'
           value={value}
           onChange={(event) => changer(event)}
         />

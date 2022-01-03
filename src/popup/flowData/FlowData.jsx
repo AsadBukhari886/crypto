@@ -8,7 +8,7 @@ function FlowData(props) {
                 <img src='https://upload.wikimedia.org/wikipedia/commons/3/36/ETC_Logo.png' alt="icon" />
             </div>
             <div className="button">
-                <button style={{ backgroundColor: `${props.color}` }}>button</button>
+                <button style={{ backgroundColor: `${props.color}` }} onClick={() => alert("button clicked")}>{props.button}</button>
             </div>
         </div>
     )
