@@ -3,9 +3,9 @@
     background-color: black;
     opacity: .9;
     width: 350px;
-    height: 350px;
-    justify-content: center;
-    align-items: center;
+    height: 300px;
+    /* justify-content: center; */
+    /* align-items: center; */
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -14,9 +14,40 @@
     position: absolute;
     z-index: 7;
     margin-left: 30%;
+    padding: 15px;
+    justify-content: center;
 
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.partical_image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.partical_price{
+    /* border: 1px solid; */
+    padding-right: 40px;
+    color: green;
+}
+.partical_price .big_price{
+    /* color: green; */
+    font-size: large;
+    
+}
+.partical_price .small_price{
+font-size: smaller;
 }
 .details{
     display: flex;
     flex-direction: column;    
+}
+
+a{
+    color: white;
+    /* justify-content: center; */
+    
 }

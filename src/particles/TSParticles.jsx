@@ -1,53 +1,140 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Particles from 'react-tsparticles';
-import Img_url from '../img_url/Img_url';
-// import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import './TSParticles.css'
+
 import Popup from '../popup/Popup';
+import bnb from '../images/bnb.png';
+import eth from '../images/eth.png';
+import xrp from '../images/xrp.png';
+import xlc from '../images/xlc.png';
+import ltc from '../images/ltc.jpg';
+import eos from '../images/eos.png';
+import btc from '../images/btc.png';
+
+// import { ltc } from '../images/Image';
 
 
 function TSParticles(props) {
-  const [shouldPopupshow, setShouldPopupshow] = useState(false)
+  const [shouldPopupshow, setShouldPopupshow] = useState(false);
   const [tsParticles, setTsParticles] = useState(null);
+  const [allData, setAllData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [value, setValue] = useState('')
+  const [details, setDetails] = useState()
 
   const particlesInit = (main) => {
-    // alert("init")
     setTsParticles(main);
   };
 
   const particlesLoaded = (container) => {
-    console.log("loader")
-    // ON CLICK LISTENERS FOR EACH PARTICLE
+
     tsParticles.setOnClickHandler((e, particles) => {
-      console.log(e)
       for (const p of particles) {
-        console.log(particles)
+        console.log("name:>", p.shapeData.name)
+        setDetails(p.shapeData)
+        // console.log("data1", p.shapeData.src)
+
+        setShouldPopupshow(true)
       }
-      setShouldPopupshow(!shouldPopupshow)
-      //  shouldPopupshow ? '<Popup />' : "false"
-
-
+      if (shouldPopupshow) {
+        // setShouldPopupshow(false)
+        setShouldPopupshow(true)
+      }
     });
   };
 
-  function url(url) {
-    return url;
+  // console.log("data1", details?.src)
+
+
+  let imageData = [
+    {
+      src: bnb,
+      height: 20,
+      width: 20,
+      name: "bnd"
+    },
+
+    {
+      src: eth,
+      height: 10,
+      width: 10,
+      name: "eth"
+    },
+    {
+      src: btc,
+      height: 10,
+      width: 10,
+      name: "btc bitcoin"
+    },
+    {
+      src: ltc,
+      height: 10,
+      width: 10,
+      name: "ltc"
+    },
+    {
+      src: xrp,
+      height: 10,
+      width: 10,
+      name: "xrp"
+    },
+    {
+      src: xlc,
+      height: 10,
+      width: 10,
+      name: "xlc"
+    },
+    {
+      src: eos,
+      height: 10,
+      width: 10,
+      name: "eos"
+    },
+    {
+      src: "https://upload.wikimedia.org/wikipedia/commons/3/36/ETC_Logo.png",
+      height: 10,
+      width: 10,
+      name: "new image",
+      image_address: "https://upload.wikimedia.org/wikipedia/commons/3/36/ETC_Logo.png"
+    },
+
+
+  ]
+  useEffect(() => {
+    setFilteredData(imageData);
+    setAllData(imageData);
+
+  }, [])
+
+  // console.log("images", imageData.filter)
+
+  const changer = (e) => {
+    let value = e.target.value.toLowerCase();
+    setValue(value)
+    console.log(value)
+    let result = [];
+    result = allData.filter((data, index) => {
+      return data.name.search(value) != -1;
+    })
+    setFilteredData(result)
   }
+  // console.log(filteredData)
 
 
   return (
     <div>
       <Particles
         id='tsparticles'
-        height='120px'
-        width='300px'
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
           interactivity: {
             events: {
               onClick: false,
-              onHover: false,
+              onHover: {
+                enable: true,
+                mode: "bubble",
+              },
               resize: false,
             },
             modes: {
@@ -64,7 +151,6 @@ function TSParticles(props) {
                 distance: 200,
                 duration: 0.4,
               },
-              onClick: {},
             },
           },
           particles: {
@@ -73,7 +159,7 @@ function TSParticles(props) {
             },
             links: {
               color: '#000000',
-              distance: 150,
+              distance: 300,
               enable: true,
               opacity: 0.7,
               width: 2,
@@ -85,34 +171,26 @@ function TSParticles(props) {
               enable: true,
               direction: 'straight',
               random: false,
+              outMode: "bounce",
               speed: 1,
               straight: true,
             },
             number: {
               density: {
-                enable: true,
+                enable: false,
                 area: 800,
               },
-              value: 30,
+              value: filteredData.length + 2,
             },
             opacity: {
               value: 1,
+              color: "red"
             },
             shape: {
               type: 'images',
 
               images: [
-                {
-                  src: 'https://help.twitter.com/content/dam/help-twitter/brand/logo.png',
-                  height: 20,
-                  width: 20,
-                },
-
-                {
-                  src: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJpdGNvaW58ZW58MHx8MHx8&w=1000&q=80',
-                  height: 10,
-                  width: 10,
-                },
+                ...filteredData
               ],
             },
 
@@ -124,8 +202,15 @@ function TSParticles(props) {
           detectRetina: true,
         }}
       />
-      {shouldPopupshow ? <Popup /> : null}
-      {/* https://help.twitter.com/content/dam/help-twitter/brand/logo.png */}
+
+      {shouldPopupshow ? <Popup show={setShouldPopupshow} detail={details} /> : null}
+      <div className='input'>
+        <input
+          placeholder='search'
+          value={value}
+          onChange={(event) => changer(event)}
+        />
+      </div>
     </div>
 
   );
