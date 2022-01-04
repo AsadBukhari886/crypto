@@ -18,7 +18,7 @@ function Popup(props) {
                         <div className="small_price">+$0.87 (2.04%)</div>
                     </div>
                 </div>
-                <br />
+                {/* <br /> */}
                 {/* <h2 >heading</h2> */}
                 <div className='details'>
                     <div className="detail1">

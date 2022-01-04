@@ -32,8 +32,6 @@ function TSParticles(props) {
       for (const p of particles) {
         console.log("name:>", p.shapeData.name)
         setDetails(p.shapeData)
-        // console.log("data1", p.shapeData.src)
-
         setShouldPopupshow(true)
       }
       if (shouldPopupshow) {
