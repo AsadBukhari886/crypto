@@ -41,7 +41,22 @@ function TSParticles(props) {
     });
   };
 
-  // console.log("data1", details?.src)
+  var data = props.data;
+  // var imageData = [];
+  // let image_src = [];
+
+  // console.log("tsparticle".props.data.Bitcoin)
+  // console.log(((props.data.Bitcoin.src)));
+  for (const keys of Object.entries(data)) {
+    // image_src = [{ ...data[keys].src }]
+    console.log(keys[1]);
+    // return {
+
+    // }
+  }
+
+
+  // console.log("data1", image_src)
 
 
   let imageData = [
@@ -112,7 +127,7 @@ function TSParticles(props) {
     console.log(value)
     let result = [];
     result = allData.filter((data, index) => {
-      return data.name.search(value) != -1;
+      return data.name.search(value) !== -1;
     })
     setFilteredData(result)
   }
@@ -170,7 +185,7 @@ function TSParticles(props) {
               direction: 'straight',
               random: false,
               outMode: "bounce",
-              speed: 1,
+              speed: 0.0002,
               straight: true,
             },
             number: {

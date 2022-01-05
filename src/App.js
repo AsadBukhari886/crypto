@@ -1,30 +1,30 @@
 import './App.css';
-import { useState } from 'react';
-import logo from './images/btc.png';
+import { useState, useEffect } from 'react';
+import data from './data.json'
 
 
 import TSParticles from './particles/TSParticles';
 
-function App() {
+function App(props) {
   const [search, setSearch] = useState(false);
   const [input, setInput] = useState('');
 
-  const changer = (e) => {
-    const value = e.target.value.toLowerCase();
-    setInput(value);
-    if (value !== null) {
-      setSearch(true);
-    }
-    if (value === null) {
-      setSearch(false)
-    }
-  };
+
+
+
+  // console.log("main", data.Bitcoin)
+
+
+
+
+
+
 
   return (
     <>
 
       <div className='App'>
-        <TSParticles search={search} input={input} />
+        <TSParticles search={search} input={input} data={data} />
       </div>
 
     </>
@@ -32,3 +32,16 @@ function App() {
 }
 
 export default App;
+
+
+
+// const changer = (e) => {
+//   const value = e.target.value.toLowerCase();
+//   setInput(value);
+//   if (value !== null) {
+//     setSearch(true);
+//   }
+//   if (value === null) {
+//     setSearch(false)
+//   }
+// };

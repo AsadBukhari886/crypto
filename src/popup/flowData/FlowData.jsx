@@ -1,6 +1,7 @@
 import 'chart.js/auto';
 import { Chart } from 'react-chartjs-2';
 
+
 import React from 'react';
 import './Flowdata.css';
 
@@ -82,4 +83,8 @@ function FlowData(props) {
   );
 }
 
+// <<<<<<< HEAD
 export default FlowData;
+// =======
+// export default FlowData;
+// >>>>>>> 0af5107a03104789e8819fadeea5c0e902a6544b

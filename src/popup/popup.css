@@ -1,78 +1,78 @@
-.main_popup{
-width: 100%;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 4;
-position: absolute;
-opacity: .9;
-/* background-color: green; */
+.main_popup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  position: absolute;
+  opacity: 0.9;
+  /* background-color: green; */
 }
 
-.popup{
-    
-    background-color: black;
-    opacity: .9;
-    width: 350px;
-    height: 300px;
-    /* justify-content: center; */
-    /* align-items: center; */
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    padding: 4px;
-    color: white;
-    position: absolute;
-    z-index: 7;
-    /* margin-left: 30%; */
-    padding: 15px;
-    justify-content: center;    
+.popup {
+  background-color: black;
+  opacity: 0.9;
+  width: 350px;
+  min-height: 300px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
 
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.partical_image{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 2px;
- 
-    /* object-fit: contain; */
-    /* border: 1px solid white; */
-    align-items: center;
-}
-.partical_image img{
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-}
-.partical_price{
-    /* border: 1px solid; */
-    padding-right: 40px;
-    color: green;
-}
-.partical_price .big_price{
-    /* color: green; */
-    font-size: large;
-    
-}
-.partical_price .small_price{
-font-size: smaller;
-}
-.details{
-    display: flex;
-    flex-direction: column;    
-}
-.link{
-    display: flex;
-    justify-content: center;
+  padding: 4px;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  /* margin-left: 30%; */
+  padding: 15px;
+  justify-content: center;
 }
 
-a{
-    color: white;
-    
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.partical_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 2px;
+
+  /* object-fit: contain; */
+  /* border: 1px solid white; */
+  align-items: center;
+}
+.partical_image img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+.partical_price {
+  /* border: 1px solid; */
+  padding-right: 40px;
+  color: green;
+}
+.partical_price .big_price {
+  /* color: green; */
+  font-size: large;
+}
+.partical_price .small_price {
+  font-size: smaller;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: white;
 }
