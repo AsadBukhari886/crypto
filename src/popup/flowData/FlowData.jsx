@@ -8,7 +8,6 @@ import './Flowdata.css';
 
 
 function FlowData(props) {
-  console.log("flow", (props.src))
 
   const chartOptions = {
     maintainAspectRatio: false,
@@ -71,7 +70,6 @@ function FlowData(props) {
       <div className='icon'>
         <img
           src={props.src}
-          // src={props.src}
           alt='links'
         />
       </div>
@@ -88,8 +86,4 @@ function FlowData(props) {
   );
 }
 
-// <<<<<<< HEAD
 export default FlowData;
-// =======
-// export default FlowData;
-// >>>>>>> 0af5107a03104789e8819fadeea5c0e902a6544b

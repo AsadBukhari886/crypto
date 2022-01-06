@@ -1,9 +1,48 @@
-const imageData=
-[
+import bitcoin from './images/bitcoin.png';
+import ethereum from './images/ethereum.png';
+import binance_coin from './images/binance_coin.png';
+import tether from './images/tether.png';
+import solana from './images/solana.png';
+import cardano from './images/cardano.png';
+import usd_coin from './images/usd_coin.png';
+import xrp from './images/xrp.png';
+import terra from './images/terra.png';
+import polkadot from './images/polkadot.png';
+import avalanche from './images/avalanche.png';
+import dogecoin from './images/dogecoin.png';
+import shiba_inu from './images/shiba_inu.png';
+import polygon from './images/polygon.png';
+import crypto_coin from './images/crypto_coin.png';
+import binance_usd from './images/binance_usd.png';
+import wrapped_bitcoin from './images/wrapped_bitcoin.png';
+import uniswap from './images/uniswap.png';
+import algorand from './images/algorand.png';
+import litecoin from './images/litecoin.png'
+import terrausd from './images/terrausd.png';
+import chainlink from './images/chainlink.png';
+import dai from './images/dai.png';
+import near_protocol from './images/near_protocol.png';
+import bitcoin_cash from './images/bitcoin_cash.png';
+import cosmos from './images/cosmos.png';
+import tron from './images/tron.png';
+import stellar from './images/stellar.png';
+import fantom from './images/fantom.png';
+import decentraland from './images/decentraland.png';
+import axie_infinity from './images/axie_infinity.png';
+import hedera from './images/hedera.png';
+import vechain from './images/vechain.png';
+import ftx_token from './images/ftx_token.png';
+import the_sandbox from './images/the_sandbox.png'
+
+
+
+
+const imageData =
+  [
 
 
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png',
+      src: bitcoin,
       height: 1,
       width: 1,
       name: "Bitcoin",
@@ -317,7 +356,7 @@ const imageData=
       price: 448.84
     },
     {
-      src: "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+      src: ethereum,
       height: 1,
       width: 1,
       name: "Ethereum",
@@ -632,7 +671,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png',
+      src: binance_coin,
       height: 1,
       width: 1,
       name: "Binance Coin",
@@ -947,7 +986,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png',
+      src: tether,
       height: 1,
       width: 1,
       name: "Tether",
@@ -1262,7 +1301,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png',
+      src: solana,
       height: 1,
       width: 1,
       name: "Solana",
@@ -1576,7 +1615,7 @@ const imageData=
       price: 470.18
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png',
+      src: cardano,
       height: 1,
       width: 1,
       name: "Cardano",
@@ -1890,7 +1929,7 @@ const imageData=
       price: 686.68
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png',
+      src: usd_coin,
       height: 1,
       width: 1,
       name: "USD Coin",
@@ -2205,7 +2244,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/52.png',
+      src: xrp,
       height: 1,
       width: 1,
       name: "XRP",
@@ -2520,7 +2559,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png',
+      src: terra,
       height: 1,
       width: 1,
       name: "Terra",
@@ -2835,7 +2874,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/6636.png',
+      src: polkadot,
       height: 1,
       width: 1,
       name: "Polkadot",
@@ -3150,7 +3189,7 @@ const imageData=
 
     },
     {
-      src: "https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png",
+      src: avalanche,
       height: 1,
       width: 1,
       name: "Avalanche",
@@ -3465,7 +3504,7 @@ const imageData=
 
     },
     {
-      src: "https://s2.coinmarketcap.com/static/img/coins/64x64/74.png",
+      src: dogecoin,
       height: 1,
       width: 1,
       name: "Dogecoin",
@@ -3780,7 +3819,7 @@ const imageData=
 
     },
     {
-      src: "https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png",
+      src: shiba_inu,
       height: 1,
       width: 1,
       name: "Shiba Inu",
@@ -4095,7 +4134,7 @@ const imageData=
 
     },
     {
-      src: "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png",
+      src: polygon,
       height: 1,
       width: 1,
       name: "Polygon",
@@ -4410,7 +4449,7 @@ const imageData=
 
     },
     {
-      src: "https://s2.coinmarketcap.com/static/img/coins/64x64/3635.png",
+      src: crypto_coin,
       height: 1,
       width: 1,
       name: "Crypto.com Coin",
@@ -4725,7 +4764,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4687.png',
+      src: binance_usd,
       height: 1,
       width: 1,
       name: "Binance USD",
@@ -5040,7 +5079,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3717.png',
+      src: wrapped_bitcoin,
       height: 1,
       width: 1,
       name: "Wrapped Bitcoin",
@@ -5355,7 +5394,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/7083.png',
+      src: uniswap,
       height: 1,
       width: 1,
       name: "Uniswap",
@@ -5670,7 +5709,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4030.png',
+      src: algorand,
       height: 1,
       width: 1,
       name: "Algorand",
@@ -5985,7 +6024,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/2.png',
+      src: litecoin,
       height: 1,
       width: 1,
       name: "Litecoin",
@@ -6300,7 +6339,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/7129.png',
+      src: terrausd,
       height: 1,
       width: 1,
       name: "TerraUSD",
@@ -6615,7 +6654,7 @@ const imageData=
 
     },
     {
-      src: "https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png",
+      src: chainlink,
       height: 1,
       width: 1,
       name: "Chainlink",
@@ -6930,7 +6969,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4943.png',
+      src: dai,
       height: 1,
       width: 1,
       name: "Dai",
@@ -7245,7 +7284,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/6535.png',
+      src: near_protocol,
       height: 1,
       width: 1,
       name: "NEAR Protocol",
@@ -7560,7 +7599,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1831.png',
+      src: bitcoin_cash,
       height: 1,
       width: 1,
       name: "Bitcoin Cash",
@@ -7875,7 +7914,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png',
+      src: cosmos,
       height: 1,
       width: 1,
       name: "Cosmos",
@@ -8190,7 +8229,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png',
+      src: tron,
       height: 1,
       width: 1,
       name: "TRON",
@@ -8505,7 +8544,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/512.png',
+      src: stellar,
       height: 1,
       width: 1,
       name: "Stellar",
@@ -8820,7 +8859,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3513.png',
+      src: fantom,
       height: 1,
       width: 1,
       name: "Fantom",
@@ -9135,7 +9174,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1966.png',
+      src: decentraland,
       height: 1,
       width: 1,
       name: "Decentraland",
@@ -9450,7 +9489,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/6783.png',
+      src: axie_infinity,
       height: 1,
       width: 1,
       name: "Axie Infinity",
@@ -9765,7 +9804,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4642.png',
+      src: hedera,
       height: 1,
       width: 1,
       name: "Hedera",
@@ -10080,7 +10119,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png',
+      src: vechain,
       height: 1,
       width: 1,
       name: "VeChain",
@@ -10395,7 +10434,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4195.png',
+      src: ftx_token,
       height: 1,
       width: 1,
       name: "FTX Token",
@@ -10710,7 +10749,7 @@ const imageData=
 
     },
     {
-      src: 'https://s2.coinmarketcap.com/static/img/coins/64x64/6210.png',
+      src: the_sandbox,
       height: 1,
       width: 1,
       name: "The Sandbox",
@@ -11031,4 +11070,4 @@ const imageData=
   ]
 
 
-  export default imageData
+export default imageData
